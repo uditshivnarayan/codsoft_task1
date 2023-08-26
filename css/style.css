@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap');
+
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: #211204;
+    color: whitesmoke;
+    line-height: 1.6;
+    /* overflow-x: hidden; */
+}
+h2{
+    color: #ca9653;
+}
+
+.header {
+    background-color: #3A1F04;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #997950;
+    font-weight: bold;
+}
+.header nav ul li a:hover{
+    color: #ca9653;
+}
+
+.hero {
+    text-align: left;
+    padding: 100px 0;
+    background: url('lord-shiva_bg2.jpg') no-repeat center center/cover;
+    /* border-bottom: solid 2px rgb(18, 18, 18); */
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #2B1700;
+    padding-left: 20px;
+}
+.rishi{
+    text-decoration: underline;
+    text-decoration-color: #997950 ;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #2B1700;
+    padding-left: 20px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3A1F04;
+    color: #997950;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #48260D;
+    color: #ca9653;
+}
+.about{
+    text-align: center;
+    margin-top: 0;
+    /* border: solid 1px white; */
+    height: auto;
+    width: 100%;
+    /* background: url(lord-shiva_bg.jpg); */
+    background-color: #2B1700;
+    padding-top: 20px;
+}
+.about h2{
+    color: #ca9653;
+}
+.about p{
+    text-align: center;
+    padding: 40px;
+    padding-top: 10px;
+    color: #997950;
+    font-size: 20px;
+}
+.about img{
+    width:800px;
+}
+.attractions{
+    /* border: solid 1px white; */
+    text-align: center;
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+    background-color: #2B1700;
+}
+.a_heading{
+    /* border: solid 1px white; */
+    /* padding-top: 15px; */
+    padding-bottom: 20px;
+}
+.triveni_text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 65px;
+    position: relative;
+}
+.attraction_container{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.attraction_triveni{
+    /* border: solid 1px blue; */
+    position: relative;
+    padding: 20px;
+    width: 40%;
+    height: 400px;
+}
+.attraction_triveni::before{
+    content: "";
+    position: absolute;
+    background: url('Ganga-Aarti-1.png');
+    background-size: 600px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    filter: brightness(0.3);
+}
+
+.attraction_jhula{
+    /* border: solid 1px blue; */
+    position: relative;
+    padding: 20px;
+    width: 60%;
+    height: 400px;
+}
+.attraction_jhula::before{
+    content: "";
+    position: absolute;
+    background-image: url('ram-jhula_bg_cut.jpg');
+    background-size: 800px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    filter: brightness(0.5);
+}
+.jhula_text{
+    /* border: solid 1px blue; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 65px;
+    position: relative;
+}
+.jhula_text p, .triveni_text p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #bbab96;
+}
+.jhula_text h3, .triveni_text h3{
+    color: #efb161;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.activities{
+    /* border: solid 1px blue; */
+    width: 100%;
+    height: auto;
+    background-color: #2B1700;
+    margin-top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.adv_heading{
+    /* border: solid 1px yellow; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+.rafting, .trekking, .yoga, .bungee{
+    /* border: solid 1px blue; */
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.rafting_elements{
+    /* border: solid 1px white; */
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #997950;
+}
+.rafting_elements p{
+    padding-top: 175px;
+    font-size: 28px;
+    color: #211204;
+}
+.rafting_elements img{
+    width: 750px;
+}
+.trekking_elements{
+    /* border: solid 1px white; */
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #211204;
+}
+.trekking_elements p{
+    padding-top: 175px;
+    font-size: 28px;
+    color: #997950;
+}
+.trekking_elements img{
+    width: 650px;
+}
+.yoga_elements{
+    /* border: solid 1px white; */
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #48260D;
+}
+.yoga_elements p{
+    padding-top: 175px;
+    font-size: 28px;
+    color: #efb161;
+}
+.yoga_elements img{
+    width: 650px;
+}
+.bungee_elements{
+    /* border: solid 1px white; */
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #efb161;
+}
+.bungee_elements p{
+    padding-top: 175px;
+    font-size: 28px;
+    color: #211204;
+}
+.bungee_elements img{
+    width: 650px;
+}
+.contact{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 40px 300px 20px 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2B1700;
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.form{
+    display: block;
+}
+.contact p{
+    padding-top: 5px;
+    color: #bbab96;
+}
+.inp{
+    margin-top: 15px;
+    height: 22.5px;
+    width: 200px;
+    border: none;
+    text-indent: 5px;
+}
+.inp:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .contact{
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin: 40px 100px 20px 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #2B1700;
+        box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .inp{
+        height: 20px;
+        border: none;
+        text-indent: 5px;
+    }
+    .contact p{
+        font-size: 15px;
+    }
+    .header {
+        background-color: #3A1F04;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    .attraction_triveni, .attraction_jhula{
+        width: auto;
+    }
+    .attraction_container{
+        display: block;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    .jhula_text p, .triveni_text p {
+      font-size: 12px;
+    }
+    .rafting, .trekking, .yoga, .bungee{
+        /* border: solid 1px blue; */
+        height: 200px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer{
+    /* display: block; */
+    padding-top: 10px;
+    /* border: solid 1px black; */
+    height: 40px;
+    text-align: center;
+    background-color: #3A1F04;
+    color: #997950;
+}
